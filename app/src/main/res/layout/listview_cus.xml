@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/img_cus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/p1" />
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/img_cus">
+
+        <TextView
+            android:id="@+id/lbl_cus_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eyad Livs"
+            android:textSize="29dp"
+            android:maxLines="1"
+            android:autoSizeTextType="uniform"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbl_cus_org"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_cus_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="559148-2013"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/lbl_cus_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lbl_cus_org"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Haidar Alattar"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/lbl_cus_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_cus_name"
+            android:layout_alignRight="@id/lbl_cus_org"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:autoSizeTextType="uniform"
+            android:text="Moa Martinson gata 2"
+             />
+
+        <TextView
+            android:id="@+id/lbl_cus_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lbl_cus_address"
+            android:layout_alignRight="@id/lbl_cus_acc"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Motala"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtl_menu"
+        android:layout_alignParentRight="true">
+
+        <ImageView android:id="@+id/imv_menu_cus"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_more_vert_black_24dp"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rl_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    <CheckBox
+        android:id="@+id/ch_show_prices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Prices"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:checked="false"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/txt_search_item"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_toRightOf="@id/ch_show_prices"
+        android:layout_margin="10dp"
+        />
+
+        <Button
+            android:id="@+id/btn_show_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/txt_search_item"
+            android:text="Save Order" />
+    </RelativeLayout>
+    <ScrollView
+        android:id="@+id/scroll_view_fragment_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_search">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_fragment_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pur_plus_price"
+        android:title="Pur Plus" />
+    <item
+        android:id="@+id/pur_price"
+        android:title="Pur Price" />
+    <item
+        android:id="@+id/sale_price"
+        android:title="Sale Price" />
+</menu>
